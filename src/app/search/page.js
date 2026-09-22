@@ -119,7 +119,7 @@ function SearchContent() {
                 {Array.from({ length: 8 }).map((_, idx) => (
                   <div
                     key={idx}
-                    className="w-full aspect-[2/3] bg-accent/50 animate-pulse rounded-xl"
+                    className="w-full aspect-2/3 bg-accent/50 animate-pulse rounded-xl"
                   />
                 ))}
               </div>

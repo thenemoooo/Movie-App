@@ -79,7 +79,6 @@ export default function SimilarMoviesPage({ params }) {
         </div>
       )}
 
-      {/* Хуудаслалт (Pagination) */}
       <div className="flex items-center justify-end gap-2 mt-10 text-sm">
         <button
           onClick={() => setPage((prev) => Math.max(prev - 1, 1))}

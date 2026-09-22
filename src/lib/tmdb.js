@@ -17,3 +17,7 @@ export async function getGenres() {
 export async function searchMovies(query, page = 1) {
   return fetchFromTMDB("/search/movie", `query=${encodeURIComponent(query)}&page=${page}`);
 }
+
+export async function getMoviesByGenres(genreId, page = 1) {
+  return fetchFromTMDB("/discover/movie", `with_genres=${genreId}&page=${page}`);
+}
